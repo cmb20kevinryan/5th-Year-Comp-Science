@@ -1,0 +1,31 @@
+#5th Year October Assessment - Kevin Ryan
+#Question 1
+#This calculator can only add and subtract
+Name = input("Enter your name: ")
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+add = 'a'
+subtract = 's'
+add.upper()
+subtract.upper()
+print("Do you want me to (a)dd or (s)ubtract")
+choice = input()
+
+if choice == 'a' or choice =='A':
+    print (num1 + num2)
+elif choice == 's' or choice == 'S':
+    print (num1-num2)
+print("Hello Jane. \n Welcome to the addition and subtraction calculator")
+else:
+      print("Invalid option")
+
+#Question 2
+#Student Name = Kevin Ryan
+print("Welcome to Temperature Alert System")
+temp = int(input("Enter temperature value in degrees celsius: "))
+if temp <20:
+    print("Too cold. Turn up heating")
+elif temp >= 20 and temp <= 24:
+    print ("Temperature is just right")
+else:
+    print("Too warm. Turn down heating")
