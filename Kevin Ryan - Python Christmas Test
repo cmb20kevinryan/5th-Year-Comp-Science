@@ -1,0 +1,33 @@
+# Question 16(a) 
+# Kevin Ryan: 
+#(i)
+print("Welcome to the driving license eligibility checker")
+#(v)
+name = input("What is your name? ")
+#(ii) On line 6, you are being asked to input your age to check if you are eligible to apply for a driving license.
+age = int(input("What age are you? "))
+#(iii)
+print("You entered", age)
+
+#(iv)
+if (age < 17):
+    print(name, "you are not entitled to apply for a driving license.")
+#(vi)
+elif (age >= 17) and (age <= 74):
+    print(name, "you are entitled to apply for a driving license")
+elif (age > 74):
+    print(name, "you are entitled to apply for a three-year driving license")
+
+#Question 16(b)
+#Kevin Ryan:
+
+# Split Bill Calculator is the name of the program
+print("Split Bill Calculator")
+# Here the user is asked to input the cost of their bill
+cost = int(input("How much is the bill? "))
+#The user is asked to input the amount of people the bill is being split between
+people = int(input("How many people? "))
+#The total amount that each person owes is found by dividing the cost by the amount of people
+total = cost / people
+#This displays the total amount that each person owes.
+print("You each owe", total)
