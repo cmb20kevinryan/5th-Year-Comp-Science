@@ -1,0 +1,49 @@
+#Question_16_A_OL
+#Enter your name here: Kevin Ryan
+
+value_small_containers = 0.15
+value_large_containers = 0.25
+
+number_small_containers = int(input("Please enter how many small containers you are returning: "))
+#(i)
+small_containers_amount = value_small_containers * number_small_containers
+print("The total value of your small containers was €", small_containers_amount)
+#(ii)
+number_large_containers = int(input("Please enter how many large containers you are returning: "))
+large_containers_amount = value_large_containers * number_large_containers
+print("The total value of your large containers was €", large_containers_amount)
+#(iii)
+total = small_containers_amount + large_containers_amount
+print("Your grand total was: €", total)
+#(iv)
+shopping_bill = float(input("Please enter your shopping bill: "))
+print("Your shopping bill with the deposit return is: €", shopping_bill - total)
+
+#Question_16_B_HL
+#Enter your name here: Kevin Ryan
+
+import random
+print("Welcome to my shop")
+total = 0
+item_list = []
+item_prices = []
+
+#(i)
+while True:
+    item = input("Please enter the item: ")
+    if item == "stop":
+        print("Your items are: ", item_list)
+        print("The prices are: ", item_prices)
+        print("Grand total: €", total)
+        #(ii)
+        print("Your random item to be checked is: ", random.choice(item_list))
+        #(iii)
+        item_prices.sort()
+        print("The most expensive item is: ", item_prices[0])
+        print("The cheapest item is: ", item_prices[-1])
+        break
+    price = float(input("Please enter the price of the item: "))
+    total = total + price
+    print("The current total is: €", total)
+    if item != "stop":
+        item_list.append(item)
