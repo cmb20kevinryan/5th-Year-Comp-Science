@@ -1,0 +1,46 @@
+#(i)
+print("Split Bill Calculator")
+
+name_list = []
+amount_list = []
+
+#(ii)
+def names():
+    name = input("Enter your friends name: ")
+    while name != "Done" and name != "done":
+        name = input("Enter your friends name: ")
+        name_list.append(name)
+        print(name_list)
+
+names()
+
+#(iii)
+def amounts():
+    cost = float(input("Enter the cost of each person's meal: "))
+    amount_list.append(cost)
+    while cost != -1:
+        cost = float(input("Enter the cost of each person's meal: "))
+        amount_list.append(cost)
+
+amounts()
+
+#(iv)
+print("The list of names included in the bill are: ", name_list)
+print("The cost of each meal is: €", amount_list)
+
+#(v)
+total = sum(amount_list)
+print("The total cost of the bill is: €", total)
+
+#(vi)
+average = (total/len(amount_list (round(2))))
+print("The average cost of the bill is: ", average)
+
+#(vii)
+highest = max(amount_list)
+highest_person = index(highest(name_list))
+print("The person that spent the most was: ", highest_person, "who spent", highest)
+
+lowest = min(amount_list)
+lowest_person = index(lowest(name_list))
+print("The person that spent the most was: ", lowest_person, "who spent", lowest)
